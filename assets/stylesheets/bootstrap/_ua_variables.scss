@@ -590,6 +590,8 @@ $badge-border-radius:         10px !default;
 
 // Breadcrumbs
 // -------------------------
+$breadcrumb-padding-vertical:   8px !default;
+$breadcrumb-padding-horizontal: 15px !default;
 $breadcrumb-bg:               darken($off-white-blue, 1%) !default;
 $breadcrumb-color:            $link-color !default;
 $breadcrumb-active-color:     $brand-primary !default;
