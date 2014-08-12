@@ -226,18 +226,20 @@
 .panel-default {
   @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
 }
+
+// Panel header-only panels...
 .panel-primary {
-  @include panel-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);
+  @include panel-variant-borderless($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);
 }
 .panel-success {
-  @include panel-variant($panel-success-border, $panel-success-text, $panel-success-heading-bg, $panel-success-border);
-}
-.panel-info {
-  @include panel-variant($panel-info-border, $panel-info-text, $panel-info-heading-bg, $panel-info-border);
+  @include panel-variant-borderless($panel-success-border, $panel-success-text, $panel-success-heading-bg, $panel-success-border);
 }
 .panel-warning {
-  @include panel-variant($panel-warning-border, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-border);
+  @include panel-variant-borderless($panel-warning-border, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-border);
 }
 .panel-danger {
-  @include panel-variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
+  @include panel-variant-borderless($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
+}
+.panel-info {
+  @include panel-variant-borderless($panel-info-border, $panel-info-text, $panel-info-heading-bg, $panel-info-border);
 }

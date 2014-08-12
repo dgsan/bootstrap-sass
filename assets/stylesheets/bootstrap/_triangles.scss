@@ -1,0 +1,87 @@
+
+@mixin triangle-up($size) {
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-bottom: $size solid;
+}
+
+@mixin triangle-down($size) {
+  width: 0;
+  height: 0;
+  border-top: $size solid;
+  border-left: $size solid transparent;
+  border-right: $size + 1px solid transparent;
+  border-bottom: 0 solid transparent;
+}
+
+span.tri {
+    display: inline-block;
+}
+
+div.tri {
+    display: block;
+}
+
+.tri.md.up {
+    @include triangle-up(100px)
+}
+
+.tri.md.down {
+   @include triangle-down(100px)
+}
+
+.tri.sm.down {
+  @include triangle-down(50px)
+}
+
+.tri.sm.up {
+  @include triangle-up(50px) 
+}
+
+.tri.xs.down {
+  @include triangle-down(24px)
+}
+
+.tri.xs.up {
+  @include triangle-up(24px) 
+}
+
+.tri.xxs.down {
+  @include triangle-down(16px)
+}
+
+.tri.xxs.up {
+  @include triangle-up(16px) 
+}
+
+.tri.up.red {
+  border-bottom-color: $ua_red;
+}
+
+.tri.down.red {
+  border-top-color: $ua_red;
+}
+
+.tri.up.blue {
+  border-bottom-color: $az_blue;
+}
+
+.tri.down.blue {
+  border-top-color: $az_blue;
+}
+
+.block-frame {
+  text-align: center;
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.block-frame-before, .block-frame-after {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
