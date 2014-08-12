@@ -522,19 +522,39 @@ $progress-bar-danger-bg:      $brand-danger !default;
 $progress-bar-info-bg:        $brand-info !default;
 
 
-// List group
-// -------------------------
-$list-group-bg:               $off-black-median !default;
-$list-group-border:           #ddd !default;
-$list-group-border-radius:    $border-radius-base !default;
+//== List group
+//
+//##
 
+//** Background color on `.list-group-item`
+$list-group-bg:               $off-black-blue !default;
+//** `.list-group-item` border color
+$list-group-border:             #ddd !default;
+//** List group border radius
+$list-group-border-radius:      $border-radius-base !default;
+
+//** Background color of single list items on hover
 $list-group-hover-bg:         #667799 !default;
+//** Text color of active list items
 $list-group-active-color:     $component-active-color !default;
+//** Background color of active list items
 $list-group-active-bg:        $component-active-bg !default;
+//** Border color of active list elements
 $list-group-active-border:    #ddd !default;
+//** Text color for content within active list items
+$list-group-active-text-color:  lighten($list-group-active-bg, 40%) !default;
+
+//** Text color of disabled list items
+$list-group-disabled-color:      $gray-light !default;
+//** Background color of disabled list items
+$list-group-disabled-bg:         $gray-lighter !default;
+//** Text color for content within disabled list items
+$list-group-disabled-text-color: $list-group-disabled-color !default;
+
 
 $list-group-link-color:          lighten($link-color, 25%) !default;
 $list-group-link-heading-color:  lighten($link-color, 25%) !default;
+$list-group-link-hover-color:   $list-group-link-color !default;
 
 
 // Panels
