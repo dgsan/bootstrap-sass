@@ -371,12 +371,12 @@ $pagination-bg:                        #333 !default;
 $pagination-border:                    #444 !default;
 
 $pagination-hover-bg:                  darken($pagination-bg, 8%) !default;
-$pagination-hover-color:               $link-hover-color !default;
+$pagination-hover-color:               $pagination-color !default;
 $pagination-hover-border:              $pagination-border !default;
 
 
 $pagination-active-bg:                 $brand-primary !default;
-$pagination-active-color:              $off-white-blue !default;
+$pagination-active-color:              $pagination-color !default;
 $pagination-active-border:             $pagination-border !default;
 
 $pagination-disabled-color:            $gray-light !default;
