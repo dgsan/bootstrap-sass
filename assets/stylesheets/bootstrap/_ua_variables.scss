@@ -557,14 +557,21 @@ $list-group-link-heading-color:  lighten($link-color, 25%) !default;
 $list-group-link-hover-color:   $list-group-link-color !default;
 
 
-// Panels
-// -------------------------
+
+//== Panels
+//
+//##
+
 $panel-bg:                    $off-black-blue !default;
 $panel-inner-border:          $off-white-blue !default;
 $panel-border-radius:         $border-radius-base !default;
 
+$panel-body-padding:          15px !default;
+$panel-heading-padding:       10px 15px !default;
+$panel-footer-padding:        $panel-heading-padding !default;
 
 $panel-footer-bg:             $off-black-blue !default;
+$panel-inner-border:          #ddd !default;
 
 $panel-default-text:          $off-black-blue !default;
 $panel-default-border:        $off-white-blue !default;
@@ -589,6 +596,7 @@ $panel-danger-heading-bg:     $state-danger-bg !default;
 $panel-info-text:             darken($state-info-text, 10%) !default;
 $panel-info-border:           $off-black-blue !default;
 $panel-info-heading-bg:       $state-info-bg !default;
+
 
 
 // Thumbnails
